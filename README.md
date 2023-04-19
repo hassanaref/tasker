@@ -4,7 +4,7 @@ Tasker is a Node.js app that uses PostgreSQL as its database. It runs on port 30
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/tasker.git`
+1. Clone the repository: `git clone https://github.com/hassanaref/tasker.git`
 2. Navigate to the project directory: `cd tasker`
 3. Install the required dependencies: `npm install`
 4. Create a `.env` file based on the `.env.example` file and add your database credentials
