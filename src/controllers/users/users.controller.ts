@@ -55,7 +55,6 @@ export class UsersController {
   @Post('/login')
   async login(@Body() login: login): Promise<loginResponse> {
     const user = await this.usersService.login(login);
-    console.log(user);
     const token = await this.authService.generateUserCredentials(user);
     return {
       id: user.id,

@@ -15,7 +15,6 @@ export const RestAuthDetail = createParamDecorator(
       oc(request).headers['x-forwarded-for']() ||
       oc<any>(request).connection.remoteAddress('');
     if (!user) {
-      console.log(ctx)
       throw new UnauthorizedException();
     } else {
       return {
