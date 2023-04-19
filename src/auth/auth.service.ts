@@ -25,7 +25,6 @@ export class AuthService {
       email: user.email,
       id: user.id,
     };
-    console.log('here');
     try {
       let access_token = this.jwtTokenService.sign(payload);
       return {
